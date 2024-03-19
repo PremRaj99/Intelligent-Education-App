@@ -34,7 +34,7 @@ import com.cuteboy.intelligenteducation.IconsPreview
 import com.cuteboy.intelligenteducation.ui.theme.DarkBlue
 
 @Composable
-fun AddCollage() {
+fun AddCourse() {
     Column (
         modifier = Modifier
             .fillMaxSize()
@@ -57,7 +57,7 @@ fun AddCollage() {
                     .padding(10.dp)
 
             ){
-                Text(text = "Add Collage +",
+                Text(text = "Add Course +",
                     fontWeight = FontWeight.Bold,
                     fontSize = 20.sp,
                     textAlign = TextAlign.Start
@@ -72,14 +72,14 @@ fun AddCollage() {
                 TextField(
                     value = collageName,
                     onValueChange = { collageName = it },
-                    label = { Text("Collage Name") }
+                    label = { Text("Course Name") }
                 )
                 Spacer(modifier = Modifier.padding(10.dp))
                 var collageAddress by remember { mutableStateOf("") }
                 TextField(
                     value = collageAddress,
                     onValueChange = { collageAddress = it },
-                    label = { Text("Address") }
+                    label = { Text("College") }
                 )
                 Spacer(modifier = Modifier.padding(10.dp))
                 Row (
@@ -189,10 +189,9 @@ fun AddCollage() {
 
 @Preview(showBackground = true)
 @Composable
-fun AddCollagePreview() {
+fun AddCoursePreview() {
     Column {
-        AppBar()
-        AddCollage()
+        AppBar("Courses", "Courses")
+        AddCourse()
     }
-
 }
