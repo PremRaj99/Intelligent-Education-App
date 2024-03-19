@@ -3,6 +3,7 @@ package com.cuteboy.intelligenteducation
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -11,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.cuteboy.intelligenteducation.Components.AppBar
+import com.cuteboy.intelligenteducation.Pages.AddCollage
 import com.cuteboy.intelligenteducation.ui.theme.IntelligentEducationTheme
 
 class MainActivity : ComponentActivity() {
@@ -32,7 +34,10 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun MyApp() {
-    AppBar()
+    Column {
+        AppBar()
+        AddCollage()
+    }
 }
 
 @Preview(showBackground = true)

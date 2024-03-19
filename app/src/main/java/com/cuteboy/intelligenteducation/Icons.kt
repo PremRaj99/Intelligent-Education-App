@@ -4,6 +4,8 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.Chat
+import androidx.compose.material.icons.rounded.Delete
+import androidx.compose.material.icons.rounded.EditNote
 import androidx.compose.material.icons.rounded.Groups
 import androidx.compose.material.icons.rounded.LibraryBooks
 import androidx.compose.material.icons.rounded.NotificationsActive
@@ -75,6 +77,24 @@ fun IconsPreview(name: String = "School") {
         }
         "Status" -> {
             Icon(imageVector = Icons.Rounded.PlaylistAddCheck,
+                contentDescription = null,
+                modifier = Modifier
+                    .size(65.dp)
+                    .padding(horizontal = 10.dp),
+                tint = Color.White
+            )
+        }
+        "Edit" -> {
+            Icon(imageVector = Icons.Rounded.EditNote,
+                contentDescription = null,
+                modifier = Modifier
+                    .size(65.dp)
+                    .padding(horizontal = 10.dp),
+                tint = Color.White
+            )
+        }
+        "Delete" -> {
+            Icon(imageVector = Icons.Rounded.Delete,
                 contentDescription = null,
                 modifier = Modifier
                     .size(65.dp)
