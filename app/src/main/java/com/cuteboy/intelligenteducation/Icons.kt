@@ -19,7 +19,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun IconsPreview(name: String = "School") {
+fun IconsPreview(name: String = "School", isBlack : String = "Color.White") {
     when(name) {
         "School" -> {
             Icon(imageVector = Icons.Rounded.School,
@@ -28,6 +28,7 @@ fun IconsPreview(name: String = "School") {
                     .size(65.dp)
                     .padding(horizontal = 10.dp),
                 tint = Color.White
+
             )
         }
         "Courses" -> {

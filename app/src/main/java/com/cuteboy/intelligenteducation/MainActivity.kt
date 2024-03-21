@@ -12,6 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.cuteboy.intelligenteducation.Components.AppBar
 import com.cuteboy.intelligenteducation.Pages.AddCollege
+import com.cuteboy.intelligenteducation.Pages.NotificationComponent
 import com.cuteboy.intelligenteducation.ui.theme.IntelligentEducationTheme
 
 class MainActivity : ComponentActivity() {
@@ -33,10 +34,11 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun MyApp() {
-    Column {
-        AppBar()
-        AddCollege()
-    }
+//    Column {
+//        AppBar("Notification", "Notification")
+//        NotificationComponent()
+//    }
+    Nav()
 }
 
 @Preview(showBackground = true)
