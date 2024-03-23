@@ -28,12 +28,12 @@ import com.cuteboy.intelligenteducation.Components.AppBar
 
 @Composable
 fun StudentDetail() {
-    Column (
+    Column(
         modifier = Modifier
             .padding(30.dp)
             .fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
-    ){
+    ) {
         var collageName by remember { mutableStateOf("") }
         TextField(
             value = collageName,
@@ -46,13 +46,13 @@ fun StudentDetail() {
         LazyColumn {
             items(4) {
                 val checkedState = remember { mutableStateOf(false) }
-                Row (
+                Row(
                     verticalAlignment = Alignment.CenterVertically,
                     horizontalArrangement = Arrangement.Start,
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(start = 6.dp)
-                ){
+                ) {
                     Checkbox(
                         checked = checkedState.value,
                         onCheckedChange = { checkedState.value = it },

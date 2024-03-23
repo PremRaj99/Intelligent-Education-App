@@ -15,12 +15,12 @@ import com.cuteboy.intelligenteducation.Pages.StudentDetailPreview
 
 @Composable
 fun Nav() {
-    val navController =  rememberNavController()
-    NavHost(navController = navController, startDestination = "Home"){
-        composable("Home"){
+    val navController = rememberNavController()
+    NavHost(navController = navController, startDestination = "Home") {
+        composable("Home") {
             Login(navController)
         }
-        composable("Dashboard"){
+        composable("Dashboard") {
             DashboardPreview(navController)
         }
         composable("AddCollege") {

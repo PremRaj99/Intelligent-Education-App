@@ -20,13 +20,13 @@ import com.cuteboy.intelligenteducation.Components.AppBar
 
 @Composable
 fun Status() {
-    Column (
+    Column(
         modifier = Modifier
             .fillMaxSize()
             .padding(30.dp),
         verticalArrangement = Arrangement.Top,
         horizontalAlignment = Alignment.CenterHorizontally
-    ){
+    ) {
         var collageName by remember { mutableStateOf("") }
         TextField(
             value = collageName,

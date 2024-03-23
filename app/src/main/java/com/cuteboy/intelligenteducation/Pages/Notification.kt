@@ -33,13 +33,13 @@ import com.cuteboy.intelligenteducation.ui.theme.DarkBlue
 
 @Composable
 fun NotificationComponent() {
-    Column (
+    Column(
         modifier = Modifier
             .fillMaxSize()
             .padding(20.dp),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
-    ){
+    ) {
         var collageName by remember { mutableStateOf("") }
         TextField(
             value = collageName,
@@ -62,21 +62,22 @@ fun NotificationComponent() {
                 .height(100.dp)
                 .padding(10.dp)
                 .border(width = 1.dp, color = Color.Black, shape = RoundedCornerShape(8.dp)),
-            label = { Text(text = "Message")}
+            label = { Text(text = "Message") }
         )
         Spacer(modifier = Modifier.padding(10.dp))
 
-        Row (
+        Row(
             modifier = Modifier
                 .padding(20.dp)
                 .fillMaxWidth(),
             horizontalArrangement = Arrangement.End
-        ){
+        ) {
             Button(onClick = { /*TODO*/ },
                 colors = ButtonDefaults
                     .run { buttonColors(DarkBlue) }
             ) {
-                Text(text = "Send",
+                Text(
+                    text = "Send",
                     fontWeight = FontWeight.Bold,
                     fontSize = 20.sp,
                     textAlign = TextAlign.Start

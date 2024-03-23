@@ -19,10 +19,11 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun IconsPreview(name: String = "School", isBlack : String = "Color.White") {
-    when(name) {
+fun IconsPreview(name: String = "School", isBlack: String = "Color.White") {
+    when (name) {
         "School" -> {
-            Icon(imageVector = Icons.Rounded.School,
+            Icon(
+                imageVector = Icons.Rounded.School,
                 contentDescription = null,
                 modifier = Modifier
                     .size(65.dp)
@@ -31,8 +32,10 @@ fun IconsPreview(name: String = "School", isBlack : String = "Color.White") {
 
             )
         }
+
         "Courses" -> {
-            Icon(imageVector = Icons.Rounded.LibraryBooks,
+            Icon(
+                imageVector = Icons.Rounded.LibraryBooks,
                 contentDescription = null,
                 modifier = Modifier
                     .size(65.dp)
@@ -40,8 +43,10 @@ fun IconsPreview(name: String = "School", isBlack : String = "Color.White") {
                 tint = Color.White
             )
         }
+
         "Students" -> {
-            Icon(imageVector = Icons.Rounded.Groups,
+            Icon(
+                imageVector = Icons.Rounded.Groups,
                 contentDescription = null,
                 modifier = Modifier
                     .size(65.dp)
@@ -49,8 +54,10 @@ fun IconsPreview(name: String = "School", isBlack : String = "Color.White") {
                 tint = Color.White
             )
         }
+
         "User" -> {
-            Icon(imageVector = Icons.Rounded.Person,
+            Icon(
+                imageVector = Icons.Rounded.Person,
                 contentDescription = null,
                 modifier = Modifier
                     .size(65.dp)
@@ -58,8 +65,10 @@ fun IconsPreview(name: String = "School", isBlack : String = "Color.White") {
                 tint = Color.White
             )
         }
+
         "Chat" -> {
-            Icon(imageVector = Icons.Rounded.Chat,
+            Icon(
+                imageVector = Icons.Rounded.Chat,
                 contentDescription = null,
                 modifier = Modifier
                     .size(65.dp)
@@ -67,8 +76,10 @@ fun IconsPreview(name: String = "School", isBlack : String = "Color.White") {
                 tint = Color.White
             )
         }
+
         "Notification" -> {
-            Icon(imageVector = Icons.Rounded.NotificationsActive,
+            Icon(
+                imageVector = Icons.Rounded.NotificationsActive,
                 contentDescription = null,
                 modifier = Modifier
                     .size(65.dp)
@@ -76,8 +87,10 @@ fun IconsPreview(name: String = "School", isBlack : String = "Color.White") {
                 tint = Color.White
             )
         }
+
         "Status" -> {
-            Icon(imageVector = Icons.Rounded.PlaylistAddCheck,
+            Icon(
+                imageVector = Icons.Rounded.PlaylistAddCheck,
                 contentDescription = null,
                 modifier = Modifier
                     .size(65.dp)
@@ -85,8 +98,10 @@ fun IconsPreview(name: String = "School", isBlack : String = "Color.White") {
                 tint = Color.White
             )
         }
+
         "Edit" -> {
-            Icon(imageVector = Icons.Rounded.EditNote,
+            Icon(
+                imageVector = Icons.Rounded.EditNote,
                 contentDescription = null,
                 modifier = Modifier
                     .size(65.dp)
@@ -94,8 +109,10 @@ fun IconsPreview(name: String = "School", isBlack : String = "Color.White") {
                 tint = Color.White
             )
         }
+
         "Delete" -> {
-            Icon(imageVector = Icons.Rounded.Delete,
+            Icon(
+                imageVector = Icons.Rounded.Delete,
                 contentDescription = null,
                 modifier = Modifier
                     .size(65.dp)
@@ -103,6 +120,7 @@ fun IconsPreview(name: String = "School", isBlack : String = "Color.White") {
                 tint = Color.White
             )
         }
+
         else -> {}
     }
 }

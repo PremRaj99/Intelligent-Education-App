@@ -24,22 +24,23 @@ import com.cuteboy.intelligenteducation.IconsPreview
 import com.cuteboy.intelligenteducation.ui.theme.DarkBlue
 
 @Composable
-fun AppBar(navText: String = "Colleges", icon : String = "School" ) {
+fun AppBar(navText: String = "Colleges", icon: String = "School") {
     Column(
         modifier = Modifier
             .fillMaxWidth()
             .height(64.dp)
     ) {
-        Row (
+        Row(
             modifier = Modifier
                 .fillMaxWidth()
                 .height(64.dp)
                 .background(DarkBlue),
             verticalAlignment = Alignment.CenterVertically
-        ){
+        ) {
             IconsPreview(icon)
             Spacer(modifier = Modifier.padding(10.dp))
-            Text(text = navText,
+            Text(
+                text = navText,
                 fontSize = 32.sp,
                 fontWeight = FontWeight.Bold,
                 color = Color.White

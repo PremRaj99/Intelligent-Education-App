@@ -34,23 +34,25 @@ import com.cuteboy.intelligenteducation.ui.theme.DarkBlue
 
 @Composable
 fun Dashboard(navController: NavHostController) {
-    Column (
+    Column(
         modifier = Modifier
             .fillMaxSize()
             .padding(30.dp)
-    ){
+    ) {
         Row {
             Button(
-                onClick = { navController.navigate("AddCollege")  },
+                onClick = { navController.navigate("AddCollege") },
                 colors = ButtonDefaults
-                    .run { buttonColors(DarkBlue) }
+                    .run { buttonColors(DarkBlue) },
+                modifier = Modifier.weight(.05f)
             ) {
-                Column (
+                Column(
                     modifier = Modifier.width(130.dp),
                     verticalArrangement = Arrangement.Center,
                     horizontalAlignment = Alignment.CenterHorizontally
-                ){
-                    Icon(imageVector = Icons.Rounded.School,
+                ) {
+                    Icon(
+                        imageVector = Icons.Rounded.School,
                         contentDescription = null,
                         modifier = Modifier
                             .size(65.dp)
@@ -60,19 +62,20 @@ fun Dashboard(navController: NavHostController) {
                     Text(text = "College")
                 }
             }
-
             Spacer(modifier = Modifier.padding(5.dp))
             Button(
                 onClick = { navController.navigate("AddCourse") },
                 colors = ButtonDefaults
-                    .run { buttonColors(DarkBlue) }
+                    .run { buttonColors(DarkBlue) },
+                modifier = Modifier.weight(.05f)
             ) {
-                Column (
+                Column(
                     modifier = Modifier.width(130.dp),
                     verticalArrangement = Arrangement.Center,
                     horizontalAlignment = Alignment.CenterHorizontally
-                ){
-                    Icon(imageVector = Icons.Rounded.LibraryBooks,
+                ) {
+                    Icon(
+                        imageVector = Icons.Rounded.LibraryBooks,
                         contentDescription = null,
                         modifier = Modifier
                             .size(65.dp)
@@ -88,14 +91,16 @@ fun Dashboard(navController: NavHostController) {
             Button(
                 onClick = { navController.navigate("AddStudent") },
                 colors = ButtonDefaults
-                    .run { buttonColors(DarkBlue) }
+                    .run { buttonColors(DarkBlue) },
+                modifier = Modifier.weight(.05f)
             ) {
-                Column (
+                Column(
                     modifier = Modifier.width(130.dp),
                     verticalArrangement = Arrangement.Center,
                     horizontalAlignment = Alignment.CenterHorizontally
-                ){
-                    Icon(imageVector = Icons.Rounded.Groups,
+                ) {
+                    Icon(
+                        imageVector = Icons.Rounded.Groups,
                         contentDescription = null,
                         modifier = Modifier
                             .size(65.dp)
@@ -109,14 +114,16 @@ fun Dashboard(navController: NavHostController) {
             Button(
                 onClick = { navController.navigate("Status") },
                 colors = ButtonDefaults
-                    .run { buttonColors(DarkBlue) }
+                    .run { buttonColors(DarkBlue) },
+                modifier = Modifier.weight(.05f)
             ) {
-                Column (
+                Column(
                     modifier = Modifier.width(130.dp),
                     verticalArrangement = Arrangement.Center,
                     horizontalAlignment = Alignment.CenterHorizontally
-                ){
-                    Icon(imageVector = Icons.Rounded.PlaylistAddCheck,
+                ) {
+                    Icon(
+                        imageVector = Icons.Rounded.PlaylistAddCheck,
                         contentDescription = null,
                         modifier = Modifier
                             .size(65.dp)
@@ -133,14 +140,16 @@ fun Dashboard(navController: NavHostController) {
             Button(
                 onClick = { navController.navigate("Notification") },
                 colors = ButtonDefaults
-                    .run { buttonColors(DarkBlue) }
+                    .run { buttonColors(DarkBlue) },
+                modifier = Modifier.weight(.05f)
             ) {
-                Column (
+                Column(
                     modifier = Modifier.width(130.dp),
                     verticalArrangement = Arrangement.Center,
                     horizontalAlignment = Alignment.CenterHorizontally
-                ){
-                    Icon(imageVector = Icons.Rounded.NotificationsActive,
+                ) {
+                    Icon(
+                        imageVector = Icons.Rounded.NotificationsActive,
                         contentDescription = null,
                         modifier = Modifier
                             .size(65.dp)
@@ -154,14 +163,16 @@ fun Dashboard(navController: NavHostController) {
             Button(
                 onClick = { navController.navigate("StudentDetail") },
                 colors = ButtonDefaults
-                    .run { buttonColors(DarkBlue) }
+                    .run { buttonColors(DarkBlue) },
+                modifier = Modifier.weight(.05f)
             ) {
-                Column (
+                Column(
                     modifier = Modifier.width(130.dp),
                     verticalArrangement = Arrangement.Center,
                     horizontalAlignment = Alignment.CenterHorizontally
-                ){
-                    Icon(imageVector = Icons.Rounded.Person,
+                ) {
+                    Icon(
+                        imageVector = Icons.Rounded.Person,
                         contentDescription = null,
                         modifier = Modifier
                             .size(65.dp)
@@ -178,7 +189,7 @@ fun Dashboard(navController: NavHostController) {
 
 //@Preview(showBackground = true)
 @Composable
-fun DashboardPreview(navController : NavHostController) {
+fun DashboardPreview(navController: NavHostController) {
     Column {
         AppBar("Name", "User")
         Dashboard(navController)
